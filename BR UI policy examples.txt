@@ -1,0 +1,69 @@
+UI Policy :
+
+1.When state is resolved then only resolved by filed should be visible
+2.In problem when state is known error then clouser notes should be hide
+ 
+
+Business Rules :
+1. when prority is 4-low and state is resolved then incident should close automatically
+2.when priority is 5-planning then suggest to watch knowledge articles
+
+
+client scripts:
+
+1. to change colors of state filed when state is changed
+
+
+
+
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+  if (isLoading || newValue === '') {
+     return;
+  }
+var elementID = g_form.getElement("incident.state");
+   switch(newValue) { 
+     case "1": elementID.style.backgroundColor = "green"; break; 
+     case "2": elementID.style.backgroundColor = "orange"; break;
+     case "3": elementID.style.backgroundColor = "tomato"; break;
+     case "6": elementID.style.backgroundColor = "pink"; break;
+     case "7": elementID.style.backgroundColor = "skyblue"; break; 
+ case "8": elementID.style.backgroundColor = "red"; break; 
+
+     default: elementID.style.backgroundColor = "white"; break; 
+  //Type appropriate comment here, and begin script below
+}
+}
+
+
+
+
+2.in HR and request Module, to display items as per assignment group we used client scripts
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	  var x=g_form.getValue('assignment_group');
+	if(newValue=="HR"){
+        g_form.setDisplay("Leaves",true);	
+ //g_form.addInfoMessage("success");
+g_form.setDisplay("Bank_Issues",true);
+g_form.setDisplay("Medical_Insurance",true);
+//g_form.setDisplay("ID_Card",false);
+//g_form.setDisplay("Access_Card",false);
+}
+else if(newValue=="IT"){
+g_form.setDisplay("ID_Card",true);	
+g_form.setDisplay("Access_Card",true);	
+// g_form.addInfoMessage("success vinod");
+g_form.setDisplay("Keyboard",true);
+	g_form.setDisplay("Mouse",true);
+g_form.setDisplay("Softwares",true);
+	g_form.setDisplay("OnBoarding Employee",true);
+}
+
+   //Type appropriate comment here, and begin script below
+	 
+   
+}

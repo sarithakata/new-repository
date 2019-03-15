@@ -1,0 +1,25 @@
+
+
+HRMS
+
+
+Selecting a HRMS to handle HR activities.
+
+The automation of repetitive and time consuming tasks associated with human resources management
+
+Functions of HRMS Systems
+
+The function of the human resources department involves tracking employee histories, skills, abilities, salaries, and accomplishments. Replacing certain processes with various levels of HRMS systems can distribute information management responsibilities so that the bulk of information gathering is not delegated strictly to HR. By allowing employees to update personal information and perform other tasks, information is kept more accurate and HR professionals are not bogged down.
+
+Each module performs a separate function within the HRMS that helps with information gathering or tracking. HRMS modules can assist with:
+
+Managing payroll
+Recruitment and onboarding
+Gathering, storing, and accessing employee information
+Keeping attendance records and tracking absenteeism
+Performance evaluation
+Benefits administration
+Learning management
+Employee self-service
+Employee scheduling
+Analytics and informed decision making
